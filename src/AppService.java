@@ -1,4 +1,4 @@
-package com.e1gscom.helloglass;
+package com.e1gscom.booksearch;
 
 import android.app.PendingIntent;
 import android.app.Service;
@@ -11,7 +11,7 @@ import com.google.android.glass.timeline.LiveCard.PublishMode;
 
 public class AppService extends Service {
     private static final String TAG = "AppService";
-    private static final String LIVE_CARD_ID = "HelloGlass";
+    private static final String LIVE_CARD_ID = "BookSearch";
     
     private AppRenderer mCallback;
     private LiveCard mLiveCard;
@@ -33,7 +33,10 @@ public class AppService extends Service {
         // Keep track of the callback to remove it before unpublishing.
         mCallback = new AppRenderer(this);
         mLiveCard.setDirectRenderingEnabled(true).getSurfaceHolder().addCallback(mCallback);
-
+            
+        //Intent menuIntent = new Intent(this, MenuActivity.class);
+        //mLiveCard.setAction(PendingIntent.getActivity(this, 0, menuIntent, 0));
+        //mLiveCard.publish(PublishMode.REVEAL);
         Intent bsIntent = new Intent(this, BookSearchActivity.class);
         mLiveCard.setAction(PendingIntent.getActivity(this, 0, bsIntent, 0));
         mLiveCard.publish(PublishMode.REVEAL);

@@ -1,4 +1,4 @@
-package com.e1gscom.helloglass;
+package com.e1gscom.booksearch;
 
 import android.content.Context;
 import android.graphics.Canvas;

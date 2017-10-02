@@ -1,4 +1,4 @@
-package com.e1gscom.helloglass;
+package com.e1gscom.booksearch;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -28,7 +28,7 @@ public class AppViewer extends FrameLayout {
     	Log.e(TAG, "AppViewer constructor 3");
 	    LayoutInflater.from(context).inflate(R.layout.start, this);
 	    mTextView =  (TextView) findViewById(R.id.hello_view);
-	    mTextView.setText("Barcode Test");
+	    mTextView.setText("Book UPC Search");
 	    	    
 	    mFooter =  (TextView) findViewById(R.id.footer);
 	    mFooter.setText(R.string.footer);	    

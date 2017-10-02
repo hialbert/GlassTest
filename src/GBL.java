@@ -1,4 +1,4 @@
-package com.e1gscom.helloglass;
+package com.e1gscom.booksearch;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,7 +20,14 @@ import android.util.Log;
 public class GBL
 {	
 	public static String TAG = "E1Barcode-TS";
-		
+	
+    public static boolean at(String funcName) {
+        boolean hit = true;
+        if (!hit && (funcName == "OnKey()"))
+            Log.v(TAG, funcName);
+        return hit;
+    }
+	
 	public static String httpResponseString = "";
 	public static String bookTitle = "";
 	public static String bookDescription = "";
