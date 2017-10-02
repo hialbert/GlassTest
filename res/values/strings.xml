@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Book Search</string>
+    <string name="say_glasswaretemplate">#Book Search#</string>
+    <string name="glass_voice_prompt">Say Book Search to triggere</string>
+    <string name="read">READ</string>
+    <string name="stop">STOP</string>    
+    <string name="footer">Book UPC Search</string>
+</resources>
